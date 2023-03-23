@@ -6,8 +6,8 @@ function Mapa(){
                 <div className="container">
                     <div className="row">
                         <div className="col-12 intro-text">
-                            <h1>Supermercados</h1>
-                            <p>Estos son los supermercados más cerca de ti.</p>
+                            <h1>Markets</h1>
+                            <p>These are the supermarkets closest to you.</p>
                         </div>
                     </div>
                 </div>

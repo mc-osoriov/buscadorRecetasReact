@@ -45,7 +45,7 @@ function Opciones() {
         
         <div dangerouslySetInnerHTML={{ __html: selectedRecipe.instructions }} />
         </div>
-        <button className="btn btn-secondary mb-5" onClick={handleBack}>Volver a la lista de recetas</button>
+        <button className="btn btn-secondary mb-5" onClick={handleBack}>Back to recipe list</button>
       </div>
     );
   }
@@ -53,20 +53,20 @@ function Opciones() {
   return (
     <section id="menu" className="bg-light mb-5">
     <div className="container">
-      <h1>Explora más recetas</h1>
-      <p>Elige entre las diferentes opciones que desplegamos.</p>
+      <h1>Explore more recipes</h1>
+      <p>Choose between the different options that we deploy.</p>
     <ul className="nav nav-pills mt-5 mb-5 justify-content-center"
              id="pills-tab" 
              role="tablist"> 
 
       <li className="nav-item" role="presentation">
-        <button className="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true"  onClick={() => handleCategory("breakfast")}>Desayuno</button>
+        <button className="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true"  onClick={() => handleCategory("breakfast")}>Breakfast</button>
        </li>
        <li className="nav-item" role="presentation">
-        <button className="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true" onClick={() => handleCategory("main course")}>Comida</button>
+        <button className="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true" onClick={() => handleCategory("main course")}>Lunch</button>
         </li>
         <li className="nav-item" role="presentation">
-        <button className="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true"  onClick={() => handleCategory("side dish")}>Cena</button>
+        <button className="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true"  onClick={() => handleCategory("side dish")}>Dinner</button>
         </li>
         <li className="nav-item" role="presentation">
         <button className="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true" onClick={() => handleCategory("snack")}>Snacks</button>
@@ -83,7 +83,7 @@ function Opciones() {
                    <img className="mt-4"src={recipe.image} alt={recipe.title} />
                     <div class="menu-item-content p-4 mt-4">
                     <h2>{recipe.title}</h2>
-                    <button className="view-button btn btn-secondary" onClick={() => handleSelectRecipe(recipe.id)}>Ver Receta Completa</button>
+                    <button className="view-button btn btn-secondary" onClick={() => handleSelectRecipe(recipe.id)}>See full recipe</button>
                     </div>
                 </div>
                 ))}

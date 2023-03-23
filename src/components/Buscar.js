@@ -38,7 +38,7 @@ function Buscar() {
         
         <div dangerouslySetInnerHTML={{ __html: selectedRecipe.instructions }} />
         </div>
-        <button className="btn btn-secondary mb-5" onClick={handleBack}>Volver a la lista de recetas</button>
+        <button className="btn btn-secondary mb-5" onClick={handleBack}>Back to recipe list</button>
       </div>
     );
   }
@@ -48,13 +48,13 @@ function Buscar() {
       <div className="container">
       <div class="row">
         <div className="col-12 intro-text">
-          <h1>Busca tus platillos</h1>
-          <p>Tenemos una gran variedad de recetas que te van a encantar. </p>
+          <h1>Find your meals</h1>
+          <p>We have a wide variety of recipes that you will love.</p>
           <div className="h-search-form mt-4">
             <form onSubmit={handleSubmit}>
 
               <input type="search" name="search" placeholder="Busca un platillo" value={query} onChange={handleChange} />
-              <button className="btn btn-secondary" type="submit">Buscar</button>
+              <button className="btn btn-secondary" type="submit">Search</button>
 
             </form>
             <ul>
@@ -68,7 +68,7 @@ function Buscar() {
                     <img className="mt-4" src={recipe.image} alt={recipe.title} />
                     <div class="menu-item-content p-4 mt-4">
                       <h2>{recipe.title}</h2>
-                      <button className="view-button btn btn-secondary" onClick={() => handleSelectRecipe(recipe.id)}>Ver Receta Completa</button>
+                      <button className="view-button btn btn-secondary" onClick={() => handleSelectRecipe(recipe.id)}>See full recipe</button>
                     </div>
 
                   </div>
